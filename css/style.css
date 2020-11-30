@@ -34,7 +34,26 @@ img {
   display: block;
 }
 
-/*Navigation*/
+/* ========= Section ========= */
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.container {
+  background-color: burlywood;
+}
+/* ========= Header =========  */
+
+.header .container {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -47,6 +66,15 @@ img {
 
 .logo-blue {
   color: #2196f3;
+}
+
+.navigation-menu {
+  display: flex;
+  margin-left: 100px;
+}
+
+.navigation-menu-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .navigation-menu-link,
@@ -78,7 +106,15 @@ img {
   color: #2196f3;
 }
 
-/* Hero */
+.header .address {
+  display: flex;
+  margin-left: auto;
+}
+.contacts:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* ========= Hero ========= */
 
 .hero-heading {
   font-family: 'Roboto', sans-serif;
@@ -99,7 +135,7 @@ img {
   background-color: #2196f3;
 }
 
-/* features */
+/* ========= features ========= */
 
 .visually-hidden {
   position: absolute;
@@ -130,7 +166,7 @@ img {
   color: #757575;
 }
 
-/* example */
+/* ========= example ========= */
 
 .example-headlines,
 .section-team-headlines {
@@ -141,7 +177,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-/* team */
+/* ========= team ========= */
 
 .team-name,
 .team-position {
@@ -156,7 +192,7 @@ img {
   color: #757575;
 }
 
-/* Footer */
+/* ========= Footer ========= */
 .footer-address,
 .footer-contacts {
   font-family: 'Roboto', sans-serif;
@@ -178,7 +214,7 @@ img {
 }
 */
 
-/*==========Студия=========*/
+/* ========= Студия ========= */
 
 .filters-button {
   font-family: 'Roboto', sans-serif;
