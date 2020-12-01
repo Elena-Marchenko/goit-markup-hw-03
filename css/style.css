@@ -45,13 +45,14 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   outline: 2px solid tomato;
 }
 
 /* ========= Header =========  */
 
-header .container {
+.header .container {
   display: flex;
   align-items: center;
   padding-top: 24px;
@@ -148,13 +149,13 @@ header .address {
 
 .background {
   background-color: #2f303a;
-  margin-bottom: 94px;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 .hero {
   text-align: center;
+  margin-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 /* ========= features ========= */
@@ -287,6 +288,8 @@ header .address {
 
 .footer-address {
   font-style: normal;
+  min-width: 231px;
+  text-align: left;
 }
 
 .footer {
@@ -311,7 +314,12 @@ header .address {
   padding-bottom: 60px;
 }
 
-/* ========= Студия ========= */
+.logo {
+  margin-bottom: 20px;
+}
+
+/* ========= СТУДИЯ ========= */
+
 .filters-button {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -320,6 +328,8 @@ header .address {
   letter-spacing: 0.03em;
   color: #212121;
   background: #f5f4fa;
+  border: solid transparent;
+  border-radius: 4px;
 }
 
 .filters-button:hover,
@@ -327,6 +337,21 @@ header .address {
   color: #ffffff;
   background-color: #2196f3;
 }
+
+.box-button {
+  margin-bottom: 50px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+}
+
+.filters-box:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* ========== Projects ======== */
 
 .projects-heading {
   font-family: 'Roboto', sans-serif;
@@ -343,4 +368,25 @@ header .address {
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects-box {
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  justify-content: flex-start;
+}
+
+.projects-box:nth-child(3n) {
+  margin-right: 0;
+}
+
+.section-portfolio {
+  margin-top: 94px;
+  margin-bottom: 94px;
 }
