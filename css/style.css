@@ -127,7 +127,6 @@ header .address {
   letter-spacing: 0.06em;
   color: #ffffff;
 
-  text-align: center;
   margin-bottom: 30px;
 }
 
@@ -155,7 +154,6 @@ header .address {
 }
 
 .hero {
-  align-items: center;
   text-align: center;
 }
 
@@ -167,6 +165,7 @@ header .address {
   font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .section-text {
@@ -249,6 +248,7 @@ header .address {
 .section-team-list {
   display: flex;
   align-items: center;
+  padding-bottom: 95px;
 }
 
 .team-cards:not(:last-child) {
@@ -265,13 +265,17 @@ header .address {
 
 .team-cards {
   padding-bottom: 30px;
+  width: 270px;
+  height: 368px;
 }
 
 .section-team-headlines {
   margin-bottom: 50px;
+  padding-top: 95px;
 }
 
 /* ========= Footer ========= */
+
 .footer-address,
 .footer-contacts {
   font-family: 'Roboto', sans-serif;
@@ -280,18 +284,33 @@ header .address {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
+
 .footer-address {
   font-style: normal;
 }
 
-/* .contact-address {
+.footer {
+  background-color: #2f303a;
+}
+
+.contact-address {
   color: #ffffff;
 }
 
 .footer-contacts {
   color: rgba(255, 255, 255, 0.6);
 }
-*/
+
+.footer-box > .logo {
+  color: #fff;
+}
+
+.footer-box {
+  height: 252px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 /* ========= Студия ========= */
 .filters-button {
   font-family: 'Roboto', sans-serif;
