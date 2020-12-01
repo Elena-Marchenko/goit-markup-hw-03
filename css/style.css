@@ -52,6 +52,10 @@ img {
 
 /* ========= Header =========  */
 
+.header {
+  height: 80px;
+}
+
 .header .container {
   display: flex;
   align-items: center;
@@ -314,7 +318,7 @@ header .address {
   padding-bottom: 60px;
 }
 
-.logo {
+footer .logo {
   margin-bottom: 20px;
 }
 
