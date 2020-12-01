@@ -2,8 +2,13 @@
   'Raleway', sans-serif; */
 
 body {
+  width: 1600px;
   color: #212121;
   background-color: #fff;
+}
+
+.hidden {
+  font-size: 0;
 }
 
 .list {
@@ -41,14 +46,12 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  outline: 2px solid tomato;
 }
 
-.container {
-  background-color: burlywood;
-}
 /* ========= Header =========  */
 
-.header .container {
+header .container {
   display: flex;
   align-items: center;
   padding-top: 24px;
@@ -106,7 +109,7 @@ img {
   color: #2196f3;
 }
 
-.header .address {
+header .address {
   display: flex;
   margin-left: auto;
 }
@@ -122,7 +125,10 @@ img {
   font-size: 44px;
   line-height: 1.4;
   letter-spacing: 0.06em;
-  /* color: #ffffff; */
+  color: #ffffff;
+
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .hero-button {
@@ -133,22 +139,28 @@ img {
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: #2196f3;
+  min-width: 200px;
+
+  padding-top: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+}
+
+.background {
+  background-color: #2f303a;
+  margin-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero {
+  align-items: center;
+  text-align: center;
 }
 
 /* ========= features ========= */
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 .section-headlines {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
@@ -166,6 +178,27 @@ img {
   color: #757575;
 }
 
+.section-features-cards {
+  display: flex;
+  align-items: flex-start;
+}
+
+.features-cards:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features-cards {
+  min-width: 270px;
+}
+
+.section-headlines {
+  margin-bottom: 10px;
+}
+
+.section-features {
+  margin-bottom: 94px;
+}
+
 /* ========= example ========= */
 
 .example-headlines,
@@ -175,6 +208,23 @@ img {
   font-size: 36px;
   line-height: 1.15;
   letter-spacing: 0.03em;
+}
+
+.example-headlines {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.example-photo {
+  display: flex;
+}
+
+.photo-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section-example {
+  margin-bottom: 94px;
 }
 
 /* ========= team ========= */
@@ -190,6 +240,35 @@ img {
 
 .team-position {
   color: #757575;
+}
+
+.section-team {
+  text-align: center;
+}
+
+.section-team-list {
+  display: flex;
+  align-items: center;
+}
+
+.team-cards:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-photo {
+  margin-bottom: 30px;
+}
+
+.team-name {
+  margin-bottom: 10px;
+}
+
+.team-cards {
+  padding-bottom: 30px;
+}
+
+.section-team-headlines {
+  margin-bottom: 50px;
 }
 
 /* ========= Footer ========= */
@@ -213,9 +292,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 */
-
 /* ========= Студия ========= */
-
 .filters-button {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
