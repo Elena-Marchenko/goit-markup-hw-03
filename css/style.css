@@ -374,7 +374,6 @@ header .address {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-left: 24px;
 }
 
 .project-description {
@@ -384,9 +383,6 @@ header .address {
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: #757575;
-
-  margin-bottom: 20px;
-  margin-left: 24px;
 }
 
 .projects {
@@ -403,6 +399,14 @@ header .address {
   flex-basis: calc(100% / 3 - 30px);
 }
 
+.border {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  padding: 24px 20px;
+  border-top: none;
+}
+
 .section-portfolio {
   margin-top: 94px;
   margin-bottom: 94px;
@@ -411,5 +415,4 @@ header .address {
 .projects-cover {
   width: 370px;
   height: 294px;
-  margin-bottom: 20px;
 }
