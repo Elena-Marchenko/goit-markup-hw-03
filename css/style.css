@@ -331,6 +331,11 @@ header .address {
 
 /* ========= СТУДИЯ ========= */
 
+.section-portfolio {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
 .filters-button {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -388,15 +393,20 @@ header .address {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
 }
 
 .projects-box {
   width: 370px;
   margin-left: 30px;
   margin-top: 30px;
-  flex-basis: calc(100% / 3 - 30px);
+}
+
+.projects-box:nth-child(3n + 1) {
+  margin-left: 0px;
+}
+
+.projects-box:nth-child(-n + 3) {
+  margin-top: 0px;
 }
 
 .border {
@@ -405,11 +415,6 @@ header .address {
   box-sizing: border-box;
   padding: 24px 20px;
   border-top: none;
-}
-
-.section-portfolio {
-  margin-top: 94px;
-  margin-bottom: 94px;
 }
 
 .projects-cover {
